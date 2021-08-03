@@ -3,7 +3,7 @@
  * WakkoTheWarner
  * https://github.com/wakkoTheWarner
  * Created in 8/2/2021
- * Version: 1.0
+ * Version: 1.1
  */
 
 import java.util.Scanner;
@@ -40,6 +40,7 @@ public class Main {
         System.out.print("How long should your prefered password be? (a good password should be from 6 - 18) ");
         userNum = scanner.nextInt();
         while (passwordValidator == false) {
+            password = "";
             for (int i = 1; i <= userNum; i++) {
                 randomizer =(int)(4 * Math.random());
                 switch (randomizer) {
@@ -62,7 +63,7 @@ public class Main {
                 }
             }
             if (checkingPasswords(password) == false) {
-                System.out.println("Oh uh! The password seems to fail the verification test!");
+                System.out.println("\nOh uh! The password seems to fail the verification test!");
                 System.out.print("Would you still want to generate it? ");
                 userInput = scanner.next();
                 if (userInput.equalsIgnoreCase("yes")) {
