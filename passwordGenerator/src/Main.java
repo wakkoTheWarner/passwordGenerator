@@ -63,7 +63,7 @@ public class Main {
                 }
             }
             if (checkingPasswords(password) == false) {
-                System.out.println("\nOh uh! The password seems to fail the verification test!");
+                System.out.println("\nOh uh! The password generated seems to fail the verification test!");
                 System.out.print("Would you still want to generate it? ");
                 userInput = scanner.next();
                 if (userInput.equalsIgnoreCase("yes")) {
